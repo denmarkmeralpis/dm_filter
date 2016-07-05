@@ -9,6 +9,7 @@ module DmFilter
             column_date = options[:column_date]
             day = options[:duration]
 
+            column_date = column_date.blank? ? 'created_at' : column_date
             d = d.blank? ? Time.zone.now : d.to_date
             t = t.blank? ? Time.zone.now : t.to_date
 
