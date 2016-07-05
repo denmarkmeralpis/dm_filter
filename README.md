@@ -7,7 +7,7 @@ DmFilter is a very light weight Rails plugin that makes it easy to fetch your Ac
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'dm_filter'
+gem 'dm_filter', '~> 0.0.3'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install dm_filter, '~> 0.0.3'
+    $ gem install dm_filter -v 0.0.3
 
 include this into your model(example Invoice)
 ##### invoice.rb
