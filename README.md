@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install dm_filter
+    $ gem install dm_filter, '~> 0.0.3'
 
 include this into your model(example Invoice)
 ##### invoice.rb
@@ -25,7 +25,7 @@ include DmFilter::Base
 ```
 
 ## Usage
-#### Values for `day`
+#### Values for `duration`
 1. `all` (default)
 2. `today`
 3. `yesterday`
@@ -35,7 +35,7 @@ include DmFilter::Base
 7. `period`
 
 #### Available options
-1. `day`
+1. `duration`(default is `all`)
 2. `from`(if `day` is equal to `period`)
 3. `to`(if `day` is equal to `period`)
 4. `column_name` (default is `created_at`)
