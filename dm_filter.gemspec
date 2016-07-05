@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "dm_filter"
   spec.version       = DmFilter::VERSION
   spec.authors       = ["Nujian Den Mark Meralpis"]
-  spec.email         = ["denmark@nueca.net"]
+  spec.email         = ["denmarkmeralpis@gmail.com"]
 
   spec.summary       = %q{Fetch ActiveRecord list using specified period as a parameter}
   spec.description   = %q{DmFilter is a very light weight Rails plugin that makes it easy to fetch your ActiveRecord lists using date or text as a parameter.}
