@@ -18,6 +18,12 @@ Or install it yourself as:
 
     $ gem install dm_filter
 
+include this into your model(example Invoice)
+##### invoice.rb
+```ruby
+include DmFilter::Base
+```
+
 ## Usage
 #### Values for `day`
 1. `all` (default)
