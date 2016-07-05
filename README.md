@@ -42,7 +42,7 @@ include DmFilter::Base
 
 #### Example
 ```ruby
-Invoice.dm_filter({ day: 'today', column_name: 'paid_at' })
+Invoice.dm_get({ day: 'today', column_name: 'paid_at' })
 ```
 
 ## Contributing
