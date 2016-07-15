@@ -38,11 +38,11 @@ include DmFilter::Base
 1. `duration`(default is `all`)
 2. `from`(if `day` is equal to `period`)
 3. `to`(if `day` is equal to `period`)
-4. `column_name` (default is `created_at`)
+4. `column_date` (default is `created_at`)
 
 #### Example
 ```ruby
-Invoice.dm_get({ duration: 'today', column_name: 'paid_at' })
+Invoice.dm_get({ duration: 'today', column_date: 'paid_at' })
 ```
 
 ## Contributing
