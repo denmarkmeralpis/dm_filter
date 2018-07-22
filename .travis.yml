@@ -1,0 +1,23 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.4.1
+services: mysql
+before_install: gem install bundler -v 1.16.1
+notifications: false
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=e3a1e96d871b3246e51eeeb6d9d3c901b93a445bd1ab710f30aadbdb4ba9ef0a
+
+before_script:
+  - bundle exec rspec && CODECLIMATE_REPO_TOKEN=e3a1e96d871b3246e51eeeb6d9d3c901b93a445bd1ab710f30aadbdb4ba9ef0a
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+scripts:
+  - bundle exec rspec spec
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
