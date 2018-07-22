@@ -134,7 +134,7 @@ Style/RedundantSelf:
 # Cop supports --auto-correct.
 Style/RescueModifier:
   Exclude:
-    # - 'spec/db/helper.rb'
+    - 'spec/db/helper.rb'
 
 # Offense count: 12
 # Cop supports --auto-correct.
