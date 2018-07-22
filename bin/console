@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "dm_filter"
+require 'bundler/setup'
+require 'dm_filter'
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
@@ -10,5 +10,5 @@ require "dm_filter"
 # require "pry"
 # Pry.start
 
-require "irb"
+require 'irb'
 IRB.start
