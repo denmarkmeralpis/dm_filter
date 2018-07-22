@@ -43,7 +43,13 @@ include DmFilter::Base
 
 #### Example
 ```ruby
-Invoice.dm_get({ duration: 'today', column_date: 'paid_at' })
+# specifying column_date
+Invoice.dm_get(duration: 'today', column_date: 'paid_at')
+```
+or simply
+```ruby
+# default column_date is created_at
+Invoice.dm_get(duration: 'today')
 ```
 
 ## Contributing
