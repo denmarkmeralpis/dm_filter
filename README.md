@@ -19,10 +19,15 @@ Or install it yourself as:
 
     $ gem install dm_filter -v 0.0.3
 
-include this into your model(example Invoice)
-##### invoice.rb
+include this into your model
 ```ruby
-include DmFilter::Base
+include DmFilter
+```
+example
+```ruby
+class Invoice < ApplicationRecord
+    include DmFilter
+end
 ```
 
 ## Usage
