@@ -4,9 +4,9 @@ require 'dm_filter'
 require 'date'
 require 'mysql2'
 require 'simplecov'
-# require 'simplecov-console'
+require 'simplecov-console'
 
-# SimpleCov.formatter = SimpleCov.formatter = SimpleCov::Formatter::Console
+SimpleCov.formatter = SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start
 
 RSpec.configure do |config|
