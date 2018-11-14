@@ -18,7 +18,7 @@ RSpec.describe DmFilter do
     end
 
     it 'returns today records' do
-      expect(Invoice.dm_get(duration: 'today').count).to eq(2)
+      expect(Invoice.dm_get(duration: 'today', from: (Time.current - 1.month), to: Time.current).count).to eq(2)
     end
 
     it 'returns yesterday records' do

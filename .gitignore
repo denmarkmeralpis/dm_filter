@@ -9,4 +9,4 @@
 /tmp/
 .byebug_history
 .rspec_status
-dm_filter-0.0.4.gem
+*.gem
